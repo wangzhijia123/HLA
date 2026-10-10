@@ -1,0 +1,11 @@
+name: hla
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  # Install a matching PyTorch/CUDA build before the pip requirements.
+  - pip:
+    - -r requirements.txt
